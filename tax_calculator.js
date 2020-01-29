@@ -1,39 +1,9 @@
-﻿<!DOCTYPE html>
-
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title></title>
-   </head>
-<body>
-	<header>
-	</header>
-	<article>
-
-<p>
-                <nav class="top-menu">
-                    <a class="navbar-logo" href="index.html"><img src="image/logo55.png" class="logo" style="border:3px solid navy"></a>
-                    <h1 class="menu-main2"> <p>Ви можете порахувати свої зобов'язання зі сплати єдиного податку </p>
-                    </h1>
-                </nav>
-
- </p>
-    <h1></h1>
-    <select title="Оберіть Вашу групу" id="sel">
-    	<option value="Оберіть Вашу групу єдиного податку">Оберіть Вашу групу єдиного податку</option>
-    	<option value="Група 1">Група 1 </option>
-    	<option value="Група 2">Група 2 </option>
-    	<option value="Група 3 без ПДВ"> Група 3 без ПДВ</option>
-    	<option value="Група 3 з ПДВ"> Група 3 з ПДВ</option>
-    </select>
-    <button id="button" title="Подтвердите Вашу группу единого налога"> Так, це моя група</button>
-    <p id="out"> Результат </p>
-<script>
-//Налоговый калькулятор для ФОП на Едином налоге
-	var sel=document.getElementById('sel'),
+// Налоговый калькулятор для ФОП на Едином налоге
+var sel=document.getElementById('sel'),
     button=document.getElementById('button');
-        button.addEventListener('click', function() {
+    
+    if (button !==null){
+    button.addEventListener('click', function() {
         alert(sel.value);
             if (document.getElementById("sel").value=="Оберіть Вашу групу єдиного податку") {
                 var out5="Оберіть Вашу групу єдиного податку";
@@ -63,8 +33,4 @@
                 }
             }
         
-    });
-</script>
-</article>
-</body>
-</html>
+    })} ;
